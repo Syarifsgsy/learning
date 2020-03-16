@@ -12,3 +12,14 @@ INSERT PENJUALAN
 INSERT INTO penjualan(id_penjualan, id_kasir, tanggal) VALUES ('200','10','2019-08-02'),('201','11','2019-07-03'),('202','12','2019-06-01'),('203','13','2019-11-11'),('204','14','2019-05-06')
 INSERT DET_PENJUALAN
 INSERT INTO det_penjualan(id_detpenjualan, id_penjualan, id_buku, jumlah) VALUES ('30','200','1','22'),('31','201','2','56'),('32','202','3','60'),('33','203','4','89'),('34','204','5','40')
+
+
+LK=03
+A. 
+SELECT tb_member.nama,tb_member.alamat,tb_transaksi.tgl,tb_transaksi.batas_waktu,tb_transaksi.tgl_bayar
+FROM tb_member,tb_transaksi
+WHERE tb_member.id_member=tb_transaksi.id_member
+B.(Coba)
+SELECT tb_member.nama,tb_member.alamat,tb_transaksi.tgl,tb_transaksi.tgl_bayar
+FROM tb_member,tb_transaksi,tb_paket
+WHERE tb_member.id_member=tb_transaksi.id_member AND MONTH(tb_transaksi.tgl) >01 AND tb_paket.jenis IN('kiloan')
