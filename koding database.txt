@@ -1,7 +1,7 @@
 SELECT COUNT(IF(YEAR(tgl_lahir) > 1980,nip,0) ) AS guru_muda
 FROM guru
 
-
+INI YANG DIGANTI
 
 
 SELECT nis,
