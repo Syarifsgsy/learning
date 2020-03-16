@@ -1,9 +1,8 @@
 SELECT COUNT(IF(YEAR(tgl_lahir) > 1980,nip,0) ) AS guru_muda
 FROM guru
 
-INI YANG DIGANTI
-
-
+INI YANG DIGA
+gadadadadadadadad
 SELECT nis,
 	MAX(IF(YEAR(tgl_lahir) = 1998,no_telepon,0 )) AS nilai_tertinggi
     
