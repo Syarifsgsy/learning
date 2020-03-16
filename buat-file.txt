@@ -1,0 +1,14 @@
+1A
+Create table buku(id_buku int(2) primary key,judul varchar(50), nosibn int(50), penulis varchar(50), penerbit varchar(50), tahun int(4), stok int(5),harga_pokok int(6), harga_jual int(6), diskon int(2) );
+
+RELASI
+ALTER TABLE pasok ADD CONSTRAINT FOREIGN KEY(id_buku) REFERENCES buku(id_buku)
+ALTER TABLE det_penjualan ADD CONSTRAINT FOREIGN KEY(id_buku) REFERENCES buku(id_buku)
+ALTER TABLE pasok ADD CONSTRAINT FOREIGN KEY(id_distributor) REFERENCES distributor(id_distributor)
+ALTER TABLE det_penjualan ADD CONSTRAINT FOREIGN KEY(id_penjualan) REFERENCES penjualan(id_penjualan)
+ALTER TABLE penjualan ADD CONSTRAINT FOREIGN KEY(id_kasir) REFERENCES kasir(id_kasir)
+
+INSERT PENJUALAN
+INSERT INTO penjualan(id_penjualan, id_kasir, tanggal) VALUES ('200','10','2019-08-02'),('201','11','2019-07-03'),('202','12','2019-06-01'),('203','13','2019-11-11'),('204','14','2019-05-06')
+INSERT DET_PENJUALAN
+INSERT INTO det_penjualan(id_detpenjualan, id_penjualan, id_buku, jumlah) VALUES ('30','200','1','22'),('31','201','2','56'),('32','202','3','60'),('33','203','4','89'),('34','204','5','40')
