@@ -14,7 +14,7 @@ INSERT DET_PENJUALAN
 INSERT INTO det_penjualan(id_detpenjualan, id_penjualan, id_buku, jumlah) VALUES ('30','200','1','22'),('31','201','2','56'),('32','202','3','60'),('33','203','4','89'),('34','204','5','40')
 
 
-LK=03
+LK-03
 A. 
 SELECT tb_member.nama,tb_member.alamat,tb_transaksi.tgl,tb_transaksi.batas_waktu,tb_transaksi.tgl_bayar
 FROM tb_member,tb_transaksi
