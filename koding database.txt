@@ -9,6 +9,9 @@ SELECT nis,
     
     FROM siswa
     GROUP BY nis
+    
+    
+    hedsvbosb vadbivadivbaduygw
 
 
 
