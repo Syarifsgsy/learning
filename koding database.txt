@@ -1,0 +1,16 @@
+SELECT COUNT(IF(YEAR(tgl_lahir) > 1980,nip,0) ) AS guru_muda
+FROM guru
+
+INI YANG DIGANTI
+
+
+SELECT nis,
+	MAX(IF(YEAR(tgl_lahir) = 1998,no_telepon,0 )) AS nilai_tertinggi
+    
+    FROM siswa
+    GROUP BY nis
+
+
+
+SELECT SUM(IF(kd_matpel = 'ING',nilai_p,0)) AS nilai_pegetahuan
+FROM nilai
