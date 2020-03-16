@@ -19,11 +19,7 @@ class ChangeJenkelTSiswa extends Migration
         });
     }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
+   
     public function down()
     {
         Schema::table('t_siswa',function($table){
