@@ -1,3 +1,6 @@
+hai!!!!!!!
+
+
 1A
 Create table buku(id_buku int(2) primary key,judul varchar(50), nosibn int(50), penulis varchar(50), penerbit varchar(50), tahun int(4), stok int(5),harga_pokok int(6), harga_jual int(6), diskon int(2) );
 
