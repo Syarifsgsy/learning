@@ -14,3 +14,6 @@ SELECT nis,
 
 SELECT SUM(IF(kd_matpel = 'ING',nilai_p,0)) AS nilai_pegetahuan
 FROM nilai
+
+
+Inilah yang dipelajari di fork
