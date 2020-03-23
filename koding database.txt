@@ -3,7 +3,7 @@ FROM guru
 
 INI YANG DIGANTI
 
-
+GAADA YG DIGANTI
 SELECT nis,
 	MAX(IF(YEAR(tgl_lahir) = 1998,no_telepon,0 )) AS nilai_tertinggi
     
