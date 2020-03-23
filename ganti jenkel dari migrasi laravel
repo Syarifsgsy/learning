@@ -27,4 +27,13 @@ class ChangeJenkelTSiswa extends Migration
 
         });
     }
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+    
+    </body>
+    </html>
 }
